@@ -11,7 +11,6 @@
     display: flex;
     justify-content: center;
     gap: 14px;
-    padding-top: 60px;
 }
 .top-bar input{
     display: flex;
@@ -26,6 +25,16 @@
     font-size: 20px;
     font-weight: 400;
 }
+
+@keyframes flashRedBackground {
+    0% { background-color: 	#f96161; }
+    100% { background-color: #ebfffc; }
+}
+
+.flash-red-background {
+    animation: flashRedBackground 1s ease;
+}
+
 
 .search-icon{
     display: flex;
@@ -86,4 +95,15 @@
 
 .icon{
     margin-top: 10px;
+}
+
+.wrong-city{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-top: 60px;
+    padding-bottom: 10px;
+    visibility: hidden;
+
 }
